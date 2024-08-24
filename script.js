@@ -6,6 +6,11 @@ const red = document.querySelector('.red')
 const blue = document.querySelector('.blue')
 const rainbow = document.querySelector('.rainbow')
 
+setGridSize.addEventListener('click', () => {
+  let gridSize = prompt('Enter the size of new grid\n(Do not enter more than 100)',8)
+  mainContainer.innerHTML = '';
+  etchASketch(gridSize)
+})
 
 function etchASketch(gridSize) {
   for (let i = 1; i <= gridSize; i++) {
