@@ -5,3 +5,10 @@ const eraser= document.querySelector('.eraser')
 const red = document.querySelector('.red')
 const blue = document.querySelector('.blue')
 const rainbow = document.querySelector('.rainbow')
+
+
+function etchASketch(gridSize) {
+  
+}
+
+etchASketch(16);
