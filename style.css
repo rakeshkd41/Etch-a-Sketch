@@ -9,3 +9,9 @@ main {
   align-items: center;
   margin-top: 5px;
 }
+
+button {
+  padding: 4px;
+  cursor: pointer;
+  border: 2px solid;
+}
