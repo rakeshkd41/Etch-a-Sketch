@@ -20,7 +20,16 @@ function etchASketch(gridSize) {
       'border: 1px solid black; flex: 1'
       divi.appendChild(divij)
   
-      
+      let color = 'green'
+  
+      eraser.addEventListener('click', () => color = '')
+      red.addEventListener('click', () => color = 'red')
+      blue.addEventListener('click', () => color = 'blue')
+      rainbow.addEventListener('click', () => color = getRandomColor())
+  
+      divij.addEventListener('mouseover', () => {
+        divij.style.backgroundColor = color
+      })
     }
   }
 }
